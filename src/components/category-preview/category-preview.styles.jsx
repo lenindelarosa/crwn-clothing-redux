@@ -4,6 +4,10 @@ export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;  
+
+  @media only screen and (max-device-width : 800px) {
+     align-items: center;
+    }
 `;
 
 export const Title = styled.span`
@@ -17,9 +21,8 @@ export const Preview = styled.div`
   column-gap: 20px;  
   row-gap: 10px;
 
-  @media only screen 
-    and (min-device-width : 200px) 
-    and (max-device-width : 780px) {
+  @media only screen and (max-device-width : 800px) {
       width: 100%;
+      grid-template-columns: 1fr 1fr;
     }
 `;

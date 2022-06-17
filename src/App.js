@@ -10,6 +10,8 @@ import Checkout from './routes/checkout/checkout.component';
 import OrderConfirmation from './routes/order-confirmation/order-confirmation.component';
 import { checkUserSession } from './store/user/user.action';
 
+import { GlobalStyle } from './global.styles';
+
 const App = () => {
   const dispatch = useDispatch();
 
@@ -18,6 +20,8 @@ const App = () => {
   }, [dispatch]);
 
   return (
+    <div>
+    <GlobalStyle />
     <Routes>
       <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
@@ -27,6 +31,8 @@ const App = () => {
         <Route path='order-confirmation' element={<OrderConfirmation />} />
       </Route>
     </Routes>
+    </div>
+
   );
 };
 

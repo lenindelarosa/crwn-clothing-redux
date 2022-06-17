@@ -21,7 +21,14 @@ export const ProductCardContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
-    //font-size: min(max(12px, 2vw), 18px);
+    font-size: min(max(12px, 2vw), 18px);
+    
+    @media only screen and (max-device-width : 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
 
   &:hover {
@@ -33,8 +40,21 @@ export const ProductCardContainer = styled.div`
       opacity: 0.85;
       display: flex;
       width: 100%;
-      font-size: min(max(10px, 0.8vw), 18px);
+      //font-size: min(max(10px, 0.8vw), 18px);
     }
+  }
+  @media screen and (max-width: 800px) {
+    /* width: 40vw; */
+
+    &:hover {
+    img {
+      opacity: unset;
+    }
+
+    button {
+      opacity: unset;
+    }
+  }
   }
   `;
 

@@ -88,8 +88,8 @@ const ShippingForm = () => {
                         <CustomFormInput disabled={isAddressValidated} required groupStyle={{ margin: 0}}  label="Zip code" type="number" onChange={onChangeHandler} name="zipCode" value={zipCode}/>
                         <CustomFormInput disabled={isAddressValidated} required groupStyle={{ margin: 0}}  label="Phone number" type="number" onChange={onChangeHandler} name="phoneNumber" value={phoneNumber}/>
                     </ZipCodeAndNumberContainer>
-                    </AddressContainer>
-                    <ValidateAddressButton disabled={isAddressValidated} buttonType={BUTTON_TYPE_CLASSES.inverted}> {(!isAddressValidated)?'Next -> Payment details': 'Continue with payment.'} </ValidateAddressButton>
+                </AddressContainer>
+                <ValidateAddressButton disabled={isAddressValidated} buttonType={BUTTON_TYPE_CLASSES.inverted}> {(!isAddressValidated)?'Next -> Payment details': 'Continue with payment.'} </ValidateAddressButton>
             </ShippingFormContainer>
             {
                 isAddressValidated ? <PaymentForm /> : null
