@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/271.30bbd783.chunk.css","mappings":"AAAA,oBAGI,qBACA,kBADA,wCAFA,aACA,wDAEA","sources":["routes/shop/shop.styles.scss"],"sourcesContent":[".products-container {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));\n    column-gap: 10px;\n    row-gap: 50px;\n}"],"names":[],"sourceRoot":""}
