@@ -28,7 +28,7 @@ const Checkout = () => {
                     <span>Price</span>
                 </HeaderBlock>
                 <HeaderBlock>
-                    <span>Remove</span>
+                    <span></span>
                 </HeaderBlock>
             </CheckoutHeader>             
             ) : (<h3> Your cart is empty.</h3>)}
