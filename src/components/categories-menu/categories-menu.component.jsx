@@ -1,10 +1,10 @@
 import { CategoriesContainer } from './categories-menu.styles'
 import DirectoryItem from '../directory-item/directory-item.component';
-import Hats from '../../assets/images/hats.png';
-import Jackets from '../../assets/images/jackets.png';
-import Sneakers from '../../assets/images/sneakers.png';
-import Womens from '../../assets/images/womens.png';
-import Mens from '../../assets/images/men.png';
+import Hats from '../../assets/images/hats.webp';
+import Jackets from '../../assets/images/jackets.webp';
+import Sneakers from '../../assets/images/sneakers.webp';
+import Womens from '../../assets/images/womens.webp';
+import Mens from '../../assets/images/men.webp';
 
 const categories = [
   {
