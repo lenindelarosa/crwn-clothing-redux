@@ -135,6 +135,7 @@ export const AddButton = styled(Button)`
     opacity: 0.9;
     min-width: unset;
     padding: 0 10px;
+    font-size: 10px;
   }
 `;
 
@@ -149,9 +150,17 @@ export const FooterContainer = styled.div`
 export const Name = styled.span`
   width: 90%;
   margin-bottom: 15px;  
+
+  @media screen and (max-width: 800px) {
+    font-size: 10px;
+  }
 `;
 
 export const Price = styled.span`
   width: 10%;  
   text-align: right;
+
+  @media screen and (max-width: 800px) {
+    font-size: 10px;
+  }
 `;
