@@ -5,9 +5,6 @@ export const CategoryDisplayContainer = styled.div`
   flex-direction: column;
   margin-bottom: 30px;  
 
-  @media only screen and (max-device-width : 800px) {
-     align-items: center;
-    }
 `;
 
 export const ProductContainer = styled.div`
@@ -15,6 +12,11 @@ export const ProductContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 10px;
   row-gap: 20px;
+
+  @media only screen and (max-device-width : 800px) {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 export const Title = styled.h2`
