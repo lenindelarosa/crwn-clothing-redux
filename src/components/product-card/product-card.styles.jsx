@@ -24,7 +24,10 @@ export const StyledPopup = styled(Popup)`
     border-radius: 18px;
     opacity: 0.9;
     border: 1px solid #cfcece;
-  }
+
+    @media only screen and (max-device-width : 800px) {
+    width: 90%;
+  }}
 `;
 
 export const ModalAction = styled.div`
@@ -47,6 +50,8 @@ export const ModalAction = styled.div`
 
 export const ModalContainer = styled.div`
   font-size: 14px;
+
+
 `;
 
 export const ModalContent = styled.div`
