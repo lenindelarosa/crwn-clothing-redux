@@ -11,13 +11,15 @@ export const CategoryPreviewContainer = styled.div`
 `;
 
 export const Title = styled.span`
+  font-size: 30px;
   margin-bottom: 25px;
-  cursor: pointer;  
+  display: flex;
+  justify-content: center;
 `;
 
 export const Preview = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   column-gap: 20px;  
   row-gap: 10px;
 
