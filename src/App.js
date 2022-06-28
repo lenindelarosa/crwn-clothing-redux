@@ -11,6 +11,7 @@ const Navigation = lazy(()=> import('./routes/navigation/navigation.component'))
 const Shop = lazy(()=> import('./routes/shop/shop.component'));
 const Checkout = lazy(()=> import('./routes/checkout/checkout.component'));
 const OrderConfirmation = lazy(() => import ('./routes/order-confirmation/order-confirmation.component'));
+const Footer = lazy(()=> import ('./routes/footer/footer.component'));
 
 
 
@@ -33,6 +34,7 @@ const App = () => {
           <Route path='order-confirmation' element={<OrderConfirmation />} />
         </Route>
       </Routes>
+      <Footer />
     </Suspense>
 
   );
