@@ -135,6 +135,7 @@ export const AddButton = styled(Button)`
   position: absolute;
   top: 255px;
   display: none;
+  font-size: 1.1vw;
   @media screen and (max-width: 800px) {
     display: block;
     opacity: 0.9;
